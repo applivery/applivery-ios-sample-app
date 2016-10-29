@@ -1,5 +1,4 @@
 language: objective-c
-osx_image: xcode8.0
-script:
-  - xcodebuild -version
-  - xcodebuild -project AppliveryDemo.xcodeproj -scheme AppliveryDemo -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6" build
+osx_image: xcode8
+xcode_project: AppliveryDemo.xcodeproj
+xcode_scheme: AppliveryDemo
