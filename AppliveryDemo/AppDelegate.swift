@@ -16,10 +16,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	var window: UIWindow?
 
 
-	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+		
+		// Basic integration
 		let applivery = Applivery.sharedInstance
-		applivery.logLevel = .Info
+		applivery.logLevel = .info
 		applivery.start(apiKey: "YOUR_API_KEY", appId: "YOUR_APP_ID", appStoreRelease: false)
+		
+		// Addvaced Integration
+		// If you want to disable feedback, uncomment nextline
+//		applivery.disableFeedback()
 		
 		return true
 	}

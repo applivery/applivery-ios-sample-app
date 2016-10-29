@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA0FCE5E1DC4DBC800B92075 /* Applivery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0FCE5D1DC4DBC800B92075 /* Applivery.framework */; };
+		FA0FCE5F1DC4DBC800B92075 /* Applivery.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA0FCE5D1DC4DBC800B92075 /* Applivery.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FA0FCE631DC4DBDD00B92075 /* Applivery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0FCE5D1DC4DBC800B92075 /* Applivery.framework */; };
+		FA0FCE641DC4DBDD00B92075 /* Applivery.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA0FCE5D1DC4DBC800B92075 /* Applivery.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FA3CF3D51C58250800A66620 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3CF3D41C58250800A66620 /* main.m */; };
 		FA3CF3D81C58250800A66620 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3CF3D71C58250800A66620 /* AppDelegate.m */; };
 		FA3CF3DB1C58250800A66620 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3CF3DA1C58250800A66620 /* ViewController.m */; };
 		FA3CF3DE1C58250800A66620 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3CF3DC1C58250800A66620 /* Main.storyboard */; };
 		FA3CF3E01C58250800A66620 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA3CF3DF1C58250800A66620 /* Assets.xcassets */; };
 		FA3CF3E31C58250800A66620 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3CF3E11C58250800A66620 /* LaunchScreen.storyboard */; };
-		FA5BB99F1C582F3C002D8B5A /* Applivery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5BB99E1C582F3C002D8B5A /* Applivery.framework */; };
-		FA5BB9A01C582F3C002D8B5A /* Applivery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5BB99E1C582F3C002D8B5A /* Applivery.framework */; };
-		FA5BB9A11C582F8F002D8B5A /* Applivery.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA5BB99E1C582F3C002D8B5A /* Applivery.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		FA5BB9A21C582F9A002D8B5A /* Applivery.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA5BB99E1C582F3C002D8B5A /* Applivery.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FA7D9A771C57D9150003F8E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D9A761C57D9150003F8E3 /* AppDelegate.swift */; };
 		FA7D9A791C57D9150003F8E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D9A781C57D9150003F8E3 /* ViewController.swift */; };
 		FA7D9A7C1C57D9150003F8E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7D9A7A1C57D9150003F8E3 /* Main.storyboard */; };
@@ -31,7 +31,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FA5BB9A21C582F9A002D8B5A /* Applivery.framework in Embed Frameworks */,
+				FA0FCE5F1DC4DBC800B92075 /* Applivery.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,7 +42,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FA5BB9A11C582F8F002D8B5A /* Applivery.framework in Embed Frameworks */,
+				FA0FCE641DC4DBDD00B92075 /* Applivery.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,6 +50,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FA0FCE5C1DC4DB4200B92075 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
+		FA0FCE5D1DC4DBC800B92075 /* Applivery.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Applivery.framework; path = ../Carthage/Build/iOS/Applivery.framework; sourceTree = "<group>"; };
 		FA3CF3D11C58250800A66620 /* AppliveryDemoObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppliveryDemoObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3CF3D41C58250800A66620 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FA3CF3D61C58250800A66620 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,7 +62,6 @@
 		FA3CF3DF1C58250800A66620 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA3CF3E21C58250800A66620 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA3CF3E41C58250800A66620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA5BB99E1C582F3C002D8B5A /* Applivery.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Applivery.framework; path = Frameworks/Applivery.framework; sourceTree = SOURCE_ROOT; };
 		FA7D9A731C57D9150003F8E3 /* AppliveryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppliveryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7D9A761C57D9150003F8E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA7D9A781C57D9150003F8E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,7 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA5BB9A01C582F3C002D8B5A /* Applivery.framework in Frameworks */,
+				FA0FCE631DC4DBDD00B92075 /* Applivery.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA5BB99F1C582F3C002D8B5A /* Applivery.framework in Frameworks */,
+				FA0FCE5E1DC4DBC800B92075 /* Applivery.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +150,8 @@
 		FA7D9A881C57D9C20003F8E3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FA5BB99E1C582F3C002D8B5A /* Applivery.framework */,
+				FA0FCE5C1DC4DB4200B92075 /* Cartfile */,
+				FA0FCE5D1DC4DBC800B92075 /* Applivery.framework */,
 			);
 			name = Frameworks;
 			path = AppliveryDemo;
@@ -203,7 +205,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Applivery S.L";
 				TargetAttributes = {
 					FA3CF3D01C58250800A66620 = {
@@ -211,6 +213,7 @@
 					};
 					FA7D9A721C57D9150003F8E3 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -348,11 +351,12 @@
 		FA3CF3E51C58250800A66620 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = AppliveryDemoObjC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -364,11 +368,12 @@
 		FA3CF3E61C58250800A66620 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = AppliveryDemoObjC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -390,8 +395,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -435,8 +442,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -455,6 +464,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -468,11 +478,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = AppliveryDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.applivery.AppliveryDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -484,11 +496,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = AppliveryDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.applivery.AppliveryDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

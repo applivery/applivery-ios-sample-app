@@ -20,9 +20,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+	
+	// Basic integration
 	Applivery *applivery = [Applivery sharedInstance];
 	applivery.logLevel = LogLevelInfo;
 	[applivery startWithApiKey:@"YOUR_API_KEY" appId:@"YOUR_APP_ID" appStoreRelease:NO];
+	
+	// Addvaced Integration
+	// If you want to disable feedback, uncomment nextline
+//	[applivery disableFeedback]
 	
 	return YES;
 }
