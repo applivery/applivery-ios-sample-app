@@ -26,6 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		// Addvaced Integration
 		// If you want to disable feedback, uncomment nextline
 //		applivery.disableFeedback()
+		applivery.screenshotBrushColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
 		
 		return true
 	}

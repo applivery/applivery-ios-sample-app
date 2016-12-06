@@ -29,6 +29,7 @@
 	// Addvaced Integration
 	// If you want to disable feedback, uncomment nextline
 //	[applivery disableFeedback]
+	applivery.screenshotBrushColor = [UIColor blackColor];
 	
 	return YES;
 }
