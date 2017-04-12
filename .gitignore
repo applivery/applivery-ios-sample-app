@@ -21,8 +21,6 @@ DerivedData
 
 # Carthage
 Carthage/Checkouts
+Carthage/Build
 *.bcsymbolmap
 *.framework.dSYM*
-Carthage/Build/Mac
-Carthage/Build/tvOS
-Carthage/Build/watchOS
