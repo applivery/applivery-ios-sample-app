@@ -1,10 +1,16 @@
 osx_image: xcode8.3
 language: objective-c
+env:
+  global:
+    - PROJECT=AppliveryDemo
+    - SCHEME=AppliveryDemo
+    - OS=10.3.1
+    - DEVICE="iPhone 7"
 cache:
   directories:
   - Carthage
 before_script:
   - carthage version
   - carthage bootstrap --cache-builds --platform iOS
-xcode_project: AppliveryDemo.xcodeproj
-xcode_scheme: AppliveryDemo
+script:
+  - set -o pipefail && xcodebuild -project $PROJECT.xcodeproj -scheme $SCHEME -sdk iphonesimulator -destination "platform=iOS Simulator,OS=$OS,name=$DEVICE" test | xcpretty
