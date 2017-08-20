@@ -22,7 +22,18 @@
 		FA7D9A7C1C57D9150003F8E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7D9A7A1C57D9150003F8E3 /* Main.storyboard */; };
 		FA7D9A7E1C57D9150003F8E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7D9A7D1C57D9150003F8E3 /* Assets.xcassets */; };
 		FA7D9A811C57D9150003F8E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7D9A7F1C57D9150003F8E3 /* LaunchScreen.storyboard */; };
+		FADCAB4A1F49FF0800DF14F6 /* AppliveryDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADCAB491F49FF0800DF14F6 /* AppliveryDemoTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FADCAB4C1F49FF0800DF14F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA7D9A6B1C57D9150003F8E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA7D9A721C57D9150003F8E3;
+			remoteInfo = AppliveryDemo;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		FA3CF3EA1C58258000A66620 /* Embed Frameworks */ = {
@@ -69,6 +80,9 @@
 		FA7D9A7D1C57D9150003F8E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA7D9A801C57D9150003F8E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA7D9A821C57D9150003F8E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FADCAB471F49FF0800DF14F6 /* AppliveryDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppliveryDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADCAB491F49FF0800DF14F6 /* AppliveryDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppliveryDemoTests.swift; sourceTree = "<group>"; };
+		FADCAB4B1F49FF0800DF14F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +99,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA0FCE5E1DC4DBC800B92075 /* Applivery.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADCAB441F49FF0800DF14F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +141,7 @@
 			children = (
 				FA7D9A751C57D9150003F8E3 /* AppliveryDemo */,
 				FA3CF3D21C58250800A66620 /* AppliveryDemoObjC */,
+				FADCAB481F49FF0800DF14F6 /* AppliveryDemoTests */,
 				FA7D9A881C57D9C20003F8E3 /* Frameworks */,
 				FA7D9A741C57D9150003F8E3 /* Products */,
 			);
@@ -130,6 +152,7 @@
 			children = (
 				FA7D9A731C57D9150003F8E3 /* AppliveryDemo.app */,
 				FA3CF3D11C58250800A66620 /* AppliveryDemoObjC.app */,
+				FADCAB471F49FF0800DF14F6 /* AppliveryDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,6 +178,15 @@
 			);
 			name = Frameworks;
 			path = AppliveryDemo;
+			sourceTree = "<group>";
+		};
+		FADCAB481F49FF0800DF14F6 /* AppliveryDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				FADCAB491F49FF0800DF14F6 /* AppliveryDemoTests.swift */,
+				FADCAB4B1F49FF0800DF14F6 /* Info.plist */,
+			);
+			path = AppliveryDemoTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,13 +230,31 @@
 			productReference = FA7D9A731C57D9150003F8E3 /* AppliveryDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		FADCAB461F49FF0800DF14F6 /* AppliveryDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FADCAB4E1F49FF0800DF14F6 /* Build configuration list for PBXNativeTarget "AppliveryDemoTests" */;
+			buildPhases = (
+				FADCAB431F49FF0800DF14F6 /* Sources */,
+				FADCAB441F49FF0800DF14F6 /* Frameworks */,
+				FADCAB451F49FF0800DF14F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FADCAB4D1F49FF0800DF14F6 /* PBXTargetDependency */,
+			);
+			name = AppliveryDemoTests;
+			productName = AppliveryDemoTests;
+			productReference = FADCAB471F49FF0800DF14F6 /* AppliveryDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		FA7D9A6B1C57D9150003F8E3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Applivery S.L";
 				TargetAttributes = {
@@ -214,6 +264,11 @@
 					FA7D9A721C57D9150003F8E3 = {
 						CreatedOnToolsVersion = 7.2;
 						LastSwiftMigration = 0800;
+					};
+					FADCAB461F49FF0800DF14F6 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FA7D9A721C57D9150003F8E3;
 					};
 				};
 			};
@@ -232,6 +287,7 @@
 			targets = (
 				FA7D9A721C57D9150003F8E3 /* AppliveryDemo */,
 				FA3CF3D01C58250800A66620 /* AppliveryDemoObjC */,
+				FADCAB461F49FF0800DF14F6 /* AppliveryDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -254,6 +310,13 @@
 				FA7D9A811C57D9150003F8E3 /* LaunchScreen.storyboard in Resources */,
 				FA7D9A7E1C57D9150003F8E3 /* Assets.xcassets in Resources */,
 				FA7D9A7C1C57D9150003F8E3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADCAB451F49FF0800DF14F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,7 +373,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FADCAB431F49FF0800DF14F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADCAB4A1F49FF0800DF14F6 /* AppliveryDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FADCAB4D1F49FF0800DF14F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA7D9A721C57D9150003F8E3 /* AppliveryDemo */;
+			targetProxy = FADCAB4C1F49FF0800DF14F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FA3CF3DC1C58250800A66620 /* Main.storyboard */ = {
@@ -355,7 +434,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = AppliveryDemoObjC/Info.plist;
@@ -372,7 +450,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = AppliveryDemoObjC/Info.plist;
@@ -504,6 +581,41 @@
 			};
 			name = Release;
 		};
+		FADCAB4F1F49FF0800DF14F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				INFOPLIST_FILE = AppliveryDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.applivery.AppliveryDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppliveryDemo.app/AppliveryDemo";
+			};
+			name = Debug;
+		};
+		FADCAB501F49FF0800DF14F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				INFOPLIST_FILE = AppliveryDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.applivery.AppliveryDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppliveryDemo.app/AppliveryDemo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -533,6 +645,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		FADCAB4E1F49FF0800DF14F6 /* Build configuration list for PBXNativeTarget "AppliveryDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADCAB4F1F49FF0800DF14F6 /* Debug */,
+				FADCAB501F49FF0800DF14F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

@@ -19,14 +19,47 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 		
 		// Basic integration
-		let applivery = Applivery.sharedInstance
+		let applivery = Applivery.shared
 		applivery.logLevel = .info
 		applivery.start(apiKey: "YOUR_API_KEY", appId: "YOUR_APP_ID", appStoreRelease: false)
 		
 		// Addvaced Integration
-		// If you want to disable feedback, uncomment nextline
+		// If you want to disable feedback, uncomment next line
 //		applivery.disableFeedback()
-		applivery.screenshotBrushColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
+		
+		// You can customize Applivery colors changing the following properties
+//		applivery.palette = Palette(
+//			primaryColor: .orange,
+//			secondaryColor: .white,
+//			primaryFontColor: .white,
+//			secondaryFontColor: .black,
+//			screenshotBrushColor: .green
+//		)
+		
+		
+		// You can even change or translate the Applivery's literals
+//		applivery.textLiterals = TextLiterals(
+//			appName: "Applivery",
+//			alertButtonCancel: "Cancel",
+//			alertButtonRetry: "Retry",
+//			alertButtonOK: "OK",
+//			errorUnexpected: "Unexpected error",
+//			errorInvalidCredentials: "Invalid credentials",
+//			errorDownloadURL: "Couldn't start download. Invalid url",
+//			otaUpdateMessage: "There is a new version available for download. Do you want to update to the latest version?",
+//			alertButtonLater: "Later",
+//			alertButtonUpdate: "Update",
+//			forceUpdateMessage: "Sorry this App is outdated. Please, update the App to continue using it",
+//			buttonForceUpdate: "Update now",
+//			feedbackButtonClose: "Close",
+//			feedbackButtonAdd: "Add Feedback",
+//			feedbackButtonSend: "Send Feedback",
+//			feedbackSelectType: "Select type",
+//			feedbackTypeBug: "Bug",
+//			feedbackTypeFeedback: "Feedback",
+//			feedbackMessagePlaceholder: "Add a message",
+//			feedbackAttach: "Attach Screenshot"
+//		)
 		
 		return true
 	}
