@@ -30,7 +30,7 @@ class ViewController: UIViewController {
 		}
 	}
 	
-	func timerEvent() {
+	@objc func timerEvent() {
 		self.time += 0.1
 		self.labelTime.text = "Time: \(self.time.f1())"
 	}
